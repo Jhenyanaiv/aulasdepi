@@ -9,6 +9,16 @@ public class EventosController {
 	@RequestMapping("/eventos/form")
 	public String form() {
 		return "formEvento";
+		
+	}
+	
+	@RequestMapping("/eventos/form/salvar")
+	public String salvar(String Evento) {
+		System.out.println("nome;"+ Evento);
+		System.out.println("local;"+ Evento);
+		System.out.println("data;"+ Evento);
+		System.out.println("horario;"+ Evento);
+		return "formEvento";
 	}
 
 }
